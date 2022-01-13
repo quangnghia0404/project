@@ -1,8 +1,6 @@
 import React from 'react';
 import './CardHover.css'
-import image1 from '../../../../images/yugi1.jpg'
-import image2 from '../../../../images/bai.jpg'
-import image3 from '../../../../images/yugi5.jpg'
+
 
 const Cardhover = () => {
     return (

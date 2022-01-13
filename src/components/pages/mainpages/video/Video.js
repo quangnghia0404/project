@@ -1,7 +1,7 @@
 import React from 'react';
 import './Video.css'
 import ReactPlayer from "react-player";
-import video from '../../../../images/homevideo.mp4'
+
 
 const Video = () => {
     return (
