@@ -1,0 +1,109 @@
+.card {
+    background-image: url('../../../../images/card.png');
+	background-position: center;
+
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+    padding: 40px;
+    
+}
+/* .row{
+    padding-top: 50px;
+} */
+.image {
+	padding-top: 20px;
+	display: inline-block;
+	text-align:center;
+	width: 33%;
+	
+}
+figure {
+	overflow: hidden;
+	margin: 0 10px;
+}
+
+p {
+	padding: 20px 10px;
+	color: white;
+}
+.image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+}
+.image #zoom-In figure img {
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+.image #zoom-In figure:hover img {
+	transform: scale(1.5);
+}
+
+
+.tele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 107px;
+    height: 4px;
+    background: #151935;
+    margin: auto;
+    margin: 10px auto;
+    position: relative;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #151935;
+    top: -6.5px;
+    left: 44%;
+}
+
+
+
+.abc h2 {
+	padding: 40px;
+	text-align: center;
+    font-size: 30px;
+    background: -webkit-linear-gradient( red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    position: relative;
+  }
+  .abc p{
+	  text-align: center;
+  }
+
+ .abc h2 {
+	 background-color: black;
+
+ }
+ @media screen and (min-width: 2000px) {
+	.card{
+		height: 900px;
+	}
+  } 
+
+  @media screen and (max-width: 360px) {
+	.tele img{
+		width: 320px;
+	}
+  } 
+

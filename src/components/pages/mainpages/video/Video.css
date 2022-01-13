@@ -1,0 +1,80 @@
+.video {
+    background-image: url('../../../../images/video.png');
+	background-position: center;
+
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title-word {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: red;
+    --color-2: #3D8DAE;
+    --color-3: yellow;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: green;
+  }
+  
+  .title-word-3 {
+    --color-1: pink;
+    --color-2: purple;
+    --color-3: blue;
+  }
+  
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  /* Here are just some visual styles. 🖌 */
+  
+  .container {
+    display: grid;
+    place-items: center;  
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .content_text{
+      text-align: center;
+      font-size: 20px;
+     
+  }
+  .content_text p{
+      color: black;
+  }
+
+  @media screen and (min-width: 2000px) {
+	.video{
+		height: 900px;
+	}
+  }
+  @media screen and (max-width: 390px) {
+    .title{
+      font-size: 30px;
+    }
+    .player-wrapper
+  {
+    height: auto;
+  }
+
+    }

@@ -1,0 +1,125 @@
+
+
+.wrapper_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+.containers{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 ;
+    flex-wrap: wrap;
+}
+.img-button{
+    background: #111;
+    
+}
+.containers .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+.containers .box:hover{
+    transform: translateY(-20px);
+}
+.containers .box::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter: blur(30px);
+}
+.containers .box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    /* filter: blur(30px); */
+}
+.containers .box:nth-child(2):before,
+.containers .box:nth-child(2)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.containers .box:nth-child(3):before,
+.containers .box:nth-child(3)::after{
+    background: linear-gradient(315deg,#4fff03,#00d0ff);
+}
+.containers .box span{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    left: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.containers .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+.containers .box .text{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+.containers .box .text h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.containers .box .text p{
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+.containers .box .text a{
+    position: absolute;
+    bottom: -15%;
+    left: 35%;
+    transform: translateY(-50%);
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.containers .box .text a:hover{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@media screen and (max-width : 330px)
+{
+    .containers {
+        width: 320px;
+    }
+    .img-button img{
+        width: 320px;
+    }
+}
